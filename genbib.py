@@ -118,6 +118,7 @@ pc_re = re.compile(r'<!--\s*papercite\((.*)\)\s*-->')
 
 
 def transform_md(fn_in, fn_out):
+    """Read fn_in .md.in file and generate fn_out .md output with bibliographies."""
     with open(fn_in) as f_in, open(fn_out, 'w', encoding='utf-8') as f_out:
         # we change directory to where the md.in file finds itself
         # path to bibfile as specified in papercite statements should be relative to that
@@ -138,13 +139,3 @@ def transform_md(fn_in, fn_out):
 if __name__ == '__main__':
     transform_md(sys.argv[1], sys.argv[2])
 
-
-# https://papercite.readthedocs.io/en/latest/options/
-# [bibtex file=cpbotha.bib key=botha_-line_1999,botha_techniques_2005]
-# [bibtex file=cpbotha.bib key=preim_visual_2013]
-# all journals grouped by year[bibtex file=cpbotha.bib allow=article group=year group_order=desc]
-# [bibtex file=cpbotha.bib deny=article,book,thesis group=year group_order=desc]
-
-# use something like this to include this output:
-# https://stackoverflow.com/questions/39539812/how-can-another-file-be-included-in-a-hugo-markdown-page
-# alternatively, pass index.md.in -> this_processor
