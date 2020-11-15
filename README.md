@@ -1,5 +1,11 @@
-`papercite_static` is my attempt at bringing some of the magic of the Wordpress
-plugin papercite to the static blog scene.
+`papercite_static` is my attempt at bringing some of the magic of the
+[Wordpress plugin papercite](https://wordpress.org/plugins/papercite/) to the
+static blog scene.
+
+(Well, actually it's just me scratching my own itch. I used to use wordpress
+papercite, but since [I moved everything to
+Hugo](https://cpbotha.net/2019/03/31/wordpress-to-hugo/), I needed a new
+solution for [my publication list](https://charlbotha.com/publications/).)
 
 It takes any text file with special embedded `papercite()` commands in the form
 of HTML comments, and then expands each of those `papercite()` invocations to a
