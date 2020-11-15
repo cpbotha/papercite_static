@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "genbib"
+version = "1.0"
+description = "wordpress papercite re-imagined for markdown and python"
+authors = ["Charl P. Botha <cpbotha@vxlabs.com>"]
+
+[tool.poetry.dependencies]
+pybtex = "*"
+python = "~3.8"
