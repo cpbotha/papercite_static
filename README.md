@@ -57,6 +57,19 @@ visualization and one M.Sc. thesis on froth. Yes froth.
 <!-- papercite("cpbotha.bib", deny=['article', 'phdthesis'], year_group=True) -->
 ```
 
+### Prepare your Python
+
+The only dependency this script requires is the wonderful [Pybtex](https://pybtex.org/).
+
+You can either install it into your preferred Python yourself, or use poetry
+together with the bundled =pyproject.toml= and do:
+
+``` shell
+poetry install
+poetry shell
+python genbib.py ...
+```
+
 ### Invoking the script
 
 - Invoke `python genbib.py _index.md.in index.md` to insert bibliographies.
