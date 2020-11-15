@@ -76,6 +76,9 @@ python genbib.py ...
 - BibTeX `.bib` file is relative to the `.md.in`.
 - Attachments (PDFs or other fulltexts specified in the BibTeX `file` field)
   will be looked for relative to the bibfile.
+- Save for example [this PDF
+  icon](https://commons.wikimedia.org/wiki/File:PDF_file_icon.svg) as `pdf.svg`
+  in the same directory as the generated `.md`.
 
 I usually keep all of the input files, and the attachments, in the same Hugo
 directory, from where I run the script, and then re-generate the Hugo website.
