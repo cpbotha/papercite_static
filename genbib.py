@@ -45,7 +45,7 @@ def format_and_maybe_link(entry: Entry, bib_dir: str) -> str:
     # https://docs.pybtex.org/api/styles.html#style-api
     md = style.format_entry(None, entry).text.render_as('markdown')
     if pdf_link is not None:
-        md += f' [<img src="pdf.svg" style="height: 1em;" />]({pdf_link})'
+        md += f' <a href="{pdf_link}" title="PDF document for {entry.key}"><img src="pdf.svg" style="height: 1em;" /></a>'
 
     return md
 
