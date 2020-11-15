@@ -1,3 +1,10 @@
+"""papercite_static
+
+Convert embedded papercite() commands in markdown files to expanded bibliographies.
+
+Copyright 2020 by Charl P. Botha <info@charlbotha.com> under the 3-clause BSD license
+"""
+
 from functools import lru_cache
 import os
 import re
